@@ -3,13 +3,17 @@ Credit Card Fraud Detection Project
 ## 1. Project Overview
 
 Objective: Build a machine learning model to classify transactions as fraudulent or legitimate.
+
 Problem Type: Binary classification with highly imbalanced data.
+
 Current Deliverable: Fraud detection model built with XGBoost, deployed via a Streamlit app.
+
 Deployment Goal: Interactive app where users can load sample transactions and see fraud probability.
 
 ## 2. Dataset
 
 Source: Kaggle – Credit Card Fraud Detection
+
 Features:
 
 - PCA-transformed variables (V1–V28)
@@ -46,58 +50,61 @@ Note: All evaluation visuals are available in the Jupyter Notebook. The Streamli
 
 ## 6. Streamlit App
 
-    Inputs:
-    - Dropdown to load sample transactions (Legit or Fraud example)
+Inputs:
 
-    Outputs:
-    - Fraud probability (e.g., “Fraud likelihood: 87%”)
-    - Classification result (Fraud / Legit)
+- Dropdown to load sample transactions (Legit or Fraud example)
+
+Outputs:
+
+- Fraud probability (e.g., “Fraud likelihood: 87%”)
+- Classification result (Fraud / Legit)
 
 ## 7. Deployment
 
-    Run locally with:
-    streamlit run app.py
-    Ensure reproducibility with requirements.txt
-    Use a virtual environment for clean setup
+Run locally with:
+streamlit run app.py
+Ensure reproducibility with requirements.txt
+Use a virtual environment for clean setup
 
 ## 8. Repository Structure
 
-    /models -> saved model + scaler
-    /data -> dataset downloaded and samples for testing
-    /notebooks -> EDA + training
-    app.py -> Streamlit app
-    requirements.txt
-    README.md -> project overview
+/models -> saved model + scaler
+/data -> dataset downloaded and samples for testing
+/notebooks -> EDA + training
+app.py -> Streamlit app
+requirements.txt
+README.md -> project overview
 
 ## 9. Future Enhancements (planned but not yet implemented):
 
-    - Train a basic feedforward neural network (MLP) on the PCA-transformed features.
-    - Compare its performance with XGBoost to evaluate which handles class imbalance more effectively.
-    - Experiment with autoencoders for unsupervised anomaly detection.
-    - Explore LSTMs if transactions are treated as sequences over time.
+- Train a basic feedforward neural network (MLP) on the PCA-transformed features.
+- Compare its performance with XGBoost to evaluate which handles class imbalance more effectively.
+- Experiment with autoencoders for unsupervised anomaly detection.
+- Explore LSTMs if transactions are treated as sequences over time.
 
-    Note: These enhancements are lightweight and feasible.The dataset size is manageable, so experiments with MLPs, autoencoders, and even LSTMs can be run locally using CPU .
+Note: These enhancements are lightweight and feasible.The dataset size is manageable, so experiments with MLPs, autoencoders, and even LSTMs can be run locally using CPU .
 
 ## 10. Screenshots
 
-    ** Model Evaluation: **
+Model Evaluation:
 
-    * Confusion Matrix:
-    ![Confusion Matrix](images/confusion_matrix.png)
+Confusion Matrix:
+![Confusion Matrix](images/confusion_matrix.png)
 
-    * ROC Curve:
-    ![ROC Curve](images/roc_curve.png)
+ROC Curve:
+![ROC Curve](images/roc_curve.png)
 
-    ** Streamlit App Demo:**
+Streamlit App Demo:
 
-    * Legitimate Transaction Example
-    ![Legit Transaction](images/streamlit_legit.png)
+Legitimate Transaction Example
+![Legit Transaction](images/streamlit_legit.png)
 
-    * Fraudulent Transaction Example
-    ![Fraud Transaction](images/streamlit_fraud.png)
+Fraudulent Transaction Example
+![Fraud Transaction](images/streamlit_fraud.png)
 
-    * Note:The app uses a tuned threshold of 0.4 to detect more fraud cases. Legitimate transactions are still identified correctly, and more frauds are detected compared to the default 0.5 setting.
+Note:The app uses a tuned threshold of 0.4 to detect more fraud cases. Legitimate transactions are still identified correctly, and more frauds are detected compared to the default 0.5 setting.
 
-11. Acknowledgments
-    Dataset provided by Kaggle
-    Libraries: Python, NumPy, Pandas, Scikit-learn, XGBoost, Streamlit, Seaborn, Matplotlib
+## 11. Acknowledgments
+
+Dataset provided by Kaggle
+Libraries: Python, NumPy, Pandas, Scikit-learn, XGBoost, Streamlit, Seaborn, Matplotlib
