@@ -1,4 +1,4 @@
-Credit Card Fraud Detection Project
+## Credit Card Fraud Detection Project
 
 ## 1. Project Overview
 
@@ -30,9 +30,13 @@ Features:
 ## 4. Model Building
 
 Model: XGBClassifier
+
 Parameters: objective='binary:logistic'
+
 eval_metric='logloss'
+
 scale_pos_weight=<calculated value>
+
 Saved trained model and scaler using joblib
 
 ## 5. Model Evaluation
@@ -63,16 +67,23 @@ Outputs:
 
 Run locally with:
 streamlit run app.py
+
 Ensure reproducibility with requirements.txt
+
 Use a virtual environment for clean setup
 
 ## 8. Repository Structure
 
 /models -> saved model + scaler
+
 /data -> dataset downloaded and samples for testing
+
 /notebooks -> EDA + training
+
 app.py -> Streamlit app
+
 requirements.txt
+
 README.md -> project overview
 
 ## 9. Future Enhancements (planned but not yet implemented):
@@ -88,18 +99,22 @@ Note: These enhancements are lightweight and feasible.The dataset size is manage
 
 Model Evaluation:
 
-Confusion Matrix:
+Confusion Matrix
+
 ![Confusion Matrix](images/confusion_matrix.png)
 
-ROC Curve:
+ROC Curve
+
 ![ROC Curve](images/roc_curve.png)
 
-Streamlit App Demo:
+Streamlit App Demo
 
 Legitimate Transaction Example
+
 ![Legit Transaction](images/streamlit_legit.png)
 
 Fraudulent Transaction Example
+
 ![Fraud Transaction](images/streamlit_fraud.png)
 
 Note:The app uses a tuned threshold of 0.4 to detect more fraud cases. Legitimate transactions are still identified correctly, and more frauds are detected compared to the default 0.5 setting.
@@ -107,4 +122,5 @@ Note:The app uses a tuned threshold of 0.4 to detect more fraud cases. Legitimat
 ## 11. Acknowledgments
 
 Dataset provided by Kaggle
+
 Libraries: Python, NumPy, Pandas, Scikit-learn, XGBoost, Streamlit, Seaborn, Matplotlib
