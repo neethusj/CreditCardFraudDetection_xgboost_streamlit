@@ -35,7 +35,7 @@ Parameters: objective='binary:logistic'
 
 eval_metric='logloss'
 
-scale_pos_weight=<calculated value>
+scale_pos_weight=calculated value
 
 Saved trained model and scaler using joblib
 
