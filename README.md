@@ -73,21 +73,21 @@ Note: All evaluation visuals are available in the Jupyter Notebook. The Streamli
 
     Model Evaluation:
 
-        Confusion Matrix:
-        ![Confusion Matrix](images/confusion_matrix.png)
+    Confusion Matrix:
+    ![Confusion Matrix](images/confusion_matrix.png)
 
-        ROC Curve:
-        ![ROC Curve](images/roc_curve.png)
+    ROC Curve:
+    ![ROC Curve](images/roc_curve.png)
 
     Streamlit App Demo:
 
-        Legitimate Transaction Example
-        ![Legit Transaction](images/streamlit_legit.png)
+    Legitimate Transaction Example
+    ![Legit Transaction](images/streamlit_legit.png)
 
-        Fraudulent Transaction Example
-        ![Fraud Transaction](images/streamlit_fraud.png)
+    Fraudulent Transaction Example
+    ![Fraud Transaction](images/streamlit_fraud.png)
 
-        Note:The app uses a tuned threshold of 0.4 to detect more fraud cases. Legitimate transactions are still identified correctly, and more frauds are detected compared to the default 0.5 setting.
+    Note:The app uses a tuned threshold of 0.4 to detect more fraud cases. Legitimate transactions are still identified correctly, and more frauds are detected compared to the default 0.5 setting.
 
 11. Acknowledgments
     Dataset provided by Kaggle
